@@ -1,0 +1,16 @@
+{
+  "name": "vulntraceai",
+  "version": "0.1.0",
+  "description": "Evidence-gated vulnerability research — a Claude Code plugin + a no-app CLI. Trace source to sink, prove with a runnable PoC, disclose only what holds up.",
+  "type": "module",
+  "bin": { "vulntrace": "cli/vulntrace.mjs" },
+  "scripts": {
+    "hunt": "node cli/vulntrace.mjs"
+  },
+  "keywords": ["security", "vulnerability", "cve", "appsec", "sast", "claude-code", "claude-code-plugin"],
+  "author": "Himanshu Gupta (https://github.com/r1zzg0d)",
+  "homepage": "https://vulntraceai.com",
+  "repository": { "type": "git", "url": "github:VulntraceAI/vulntraceai-plugin" },
+  "license": "Apache-2.0",
+  "engines": { "node": ">=18" }
+}

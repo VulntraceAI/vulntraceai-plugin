@@ -1,0 +1,4 @@
+node_modules/
+vulntrace-out/
+*.log
+.DS_Store
