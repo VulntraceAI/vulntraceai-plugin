@@ -10,11 +10,9 @@ Created by [Himanshu Gupta](https://github.com/r1zzg0d) · <https://vulntraceai.
 ## Install
 
 ```text
-/plugin marketplace add VulntraceAI/vulntraceai
+/plugin marketplace add VulntraceAI/vulntraceai-plugin
 /plugin install vulntraceai@vulntraceai
 ```
-
-(Replace `VulntraceAI/vulntraceai` with whatever public repo hosts this marketplace.)
 
 ## Use
 

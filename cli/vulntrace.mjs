@@ -52,7 +52,7 @@ async function main() {
   const opts = parseArgs(process.argv.slice(2));
   if (opts.help || !opts.repo) {
     usage();
-    process.exit(opts.repo ? 0 : 1);
+    process.exit(opts.help ? 0 : 1);
   }
 
   // Resolve the engine: explicit --engine wins; otherwise the first installed agent.
