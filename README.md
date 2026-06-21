@@ -34,6 +34,17 @@ Then:
 You can also just ask Claude to *"hunt this repo for exploitable vulnerabilities"* —
 the bundled `vuln-hunt` skill applies the same discipline automatically.
 
+**Updating:**
+
+```text
+claude plugin marketplace update vulntraceai
+claude plugin update vulntraceai@vulntraceai
+```
+
+> Use the qualified `vulntraceai@vulntraceai` form — the bare
+> `claude plugin update vulntraceai` reports "Plugin not found". Restart Claude Code
+> afterwards to load the new version.
+
 ## 2. CLI (any shell, no Claude Code)
 
 Drives your own `claude` or `codex` CLI locally and writes the advisories + PoCs to
