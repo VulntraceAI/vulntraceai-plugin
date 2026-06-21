@@ -14,6 +14,17 @@ Created by [Himanshu Gupta](https://github.com/r1zzg0d) · <https://vulntraceai.
 /plugin install vulntraceai@vulntraceai
 ```
 
+## Update
+
+```text
+claude plugin marketplace update vulntraceai
+claude plugin update vulntraceai@vulntraceai
+```
+
+> Use the qualified `vulntraceai@vulntraceai` form — the bare
+> `claude plugin update vulntraceai` reports "Plugin not found". Restart Claude Code
+> afterwards to load the new version.
+
 ## Use
 
 ```text
@@ -41,8 +52,8 @@ auto-submits anything — you disclose, on your terms.
 
 ## Prefer not to use Claude Code?
 
-- **CLI:** run `node companion/cli.mjs <repo>` from the main repo to drive your local
-  `claude` or `codex` over a repo and write the advisories + PoCs to `vulntrace-out/`.
+- **CLI:** `npx github:VulntraceAI/vulntraceai-plugin <repo>` drives your local
+  `claude` or `codex` over a repo and writes the advisories + PoCs to `vulntrace-out/`.
 - **Companion app + Workspace:** download the desktop Companion at
   <https://vulntraceai.com/download> for the browser-based gate workflow.
 
