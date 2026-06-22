@@ -78,7 +78,11 @@ Then, for EACH qualifying finding, a **CVE-grade advisory** with these sections:
   numbered attack steps.
 - **6. CVSS v4.0 Justification** — both vectors, every metric justified in one line.
 - **7. Remediation** — a concrete code fix (diff or corrected snippet) + the systemic fix.
-- **8. Distinctness & Disclosure** — how it differs from existing advisories; whether a
+- **8. Related observations** — ONLY if a genuine sibling variant of the same bug
+  exists elsewhere (same root cause, worth the same fix), list it with file:line and a
+  one-line note. If there are none, write "None." Do NOT invent or pad — a thin or
+  speculative entry here is worse than an honest "None."
+- **9. Distinctness & Disclosure** — how it differs from existing advisories; whether a
   SECURITY.md exists and how to report.
 
 ## The gate — the whole point of VulntraceAI

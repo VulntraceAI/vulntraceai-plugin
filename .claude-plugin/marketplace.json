@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "VulntraceAI — evidence-gated vulnerability research for your own coding agent. Trace source to sink, prove with a runnable PoC, then disclose only what holds up.",
-    "version": "0.1.1"
+    "version": "0.1.2"
   },
   "plugins": [
     {
       "name": "vulntraceai",
       "source": "./plugin",
       "description": "Hunt for exploitable, CVE-grade vulnerabilities in a repository with your own Claude — trace source to sink, prove the bug with a runnable PoC, and gate the advisory behind real validation.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": {
         "name": "Himanshu Gupta",
         "url": "https://github.com/r1zzg0d"

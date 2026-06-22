@@ -40,7 +40,8 @@ Metadata table (project, affected version, component file→function, CWE, sever
 chained + un-chained CVSS v4.0, who can exploit, boundary crossed, confidence) →
 Summary → Affected Code (source/sink annotated) → Negative Control → Proof of Concept
 (with negative control + observed output) → Impact → CVSS justification (per metric) →
-Remediation (concrete fix + systemic fix) → Distinctness & Disclosure.
+Remediation (concrete fix + systemic fix) → Related observations (only genuine sibling
+variants worth the same fix, else "None" — never pad) → Distinctness & Disclosure.
 
 The full phase-by-phase methodology (Recon → Architecture → Intent → Advisories →
 Attack surface → Deep analysis → Negative control → Impact chaining → Validate) lives
