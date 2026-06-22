@@ -33,15 +33,16 @@ function parseArgs(argv) {
 function usage() {
   process.stdout.write(
     `\n${C.b("VulntraceAI CLI")} — evidence-gated vulnerability research in your terminal\n\n` +
-    `${C.b("Usage:")} node cli/vulntrace.mjs <repo> [options]\n\n` +
+    `${C.b("Usage:")} vulntrace <repo> [options]\n` +
+    `       npx github:VulntraceAI/vulntraceai-plugin <repo> [options]\n\n` +
     `  <repo>            local path or git URL to analyze\n` +
     `  -e, --engine X    claude | codex | builtin  (default: first agent on PATH)\n` +
     `  -r, --ref REF     git ref to check out (default: HEAD)\n` +
     `  -o, --out DIR     output directory (default: vulntrace-out)\n` +
     `  -h, --help        this help\n\n` +
     `${C.b("Examples:")}\n` +
-    `  node cli/vulntrace.mjs ./my-service\n` +
-    `  node cli/vulntrace.mjs https://github.com/owner/repo --engine claude\n\n` +
+    `  npx github:VulntraceAI/vulntraceai-plugin ./my-service\n` +
+    `  npx github:VulntraceAI/vulntraceai-plugin https://github.com/owner/repo --engine claude\n\n` +
     `Drives your OWN ${C.b("claude")}/${C.b("codex")} CLI locally. Your code never leaves the machine.\n\n`,
   );
 }
