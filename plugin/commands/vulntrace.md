@@ -68,9 +68,10 @@ Then, for EACH qualifying finding, a **CVE-grade advisory** with these sections:
   safe path calls but this one does NOT).
 - **3. Negative Control** — quote the sibling path that DOES call the guard; state the
   asymmetry plainly.
-- **4. Proof of Concept** — a self-contained, NON-DESTRUCTIVE PoC (bash preferred,
-  python ok). Bind only to 127.0.0.1; never target third parties or exfiltrate. Reuse
-  the project's own functions where possible. It MUST include a clearly-labelled
+- **4. Proof of Concept** — embed the COMPLETE PoC script INLINE here as a fenced code
+  block (the full runnable script, never a reference to it). Self-contained,
+  NON-DESTRUCTIVE (bind only to 127.0.0.1; never target third parties or exfiltrate),
+  reusing the project's own functions where possible. It MUST include a clearly-labelled
   NEGATIVE CONTROL proving the safe path is rejected, the positive trigger proving the
   boundary is crossed, and printed observed output. If chained, demonstrate the chain
   end-to-end.
